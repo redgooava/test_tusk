@@ -1,0 +1,154 @@
+# .gitignore для Python проекта
+
+# ==================== Python ====================
+# Байт-код
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Распределения и яйца
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Установщик pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Юнит-тесты
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pytestdebug.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Конфигурации окружений
+.env
+.env.local
+.env.*.local
+venv/
+env/
+ENV/
+.envrc
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ==================== Операционные системы ====================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ==================== Базы данных и хранилища ====================
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Redis
+dump.rdb
+
+# ==================== Документация ====================
+docs/_build/
+apidoc/
+site/
+
+# ==================== Логи ====================
+*.log
+logs/
+*.pid
+
+# ==================== Временные файлы ====================
+*.tmp
+*.temp
+*~
+
+# ==================== Медиа и загрузки ====================
+uploads/
+media/
+staticfiles/
+
+# ==================== Конфигурации ====================
+# Исключаем, но с возможностью переопределить
+!config/settings/local.py
+!config/settings/test.py
+
+# ==================== Docker ====================
+docker-compose.override.yml
+
+# ==================== FastAPI специфичное ====================
+# Файлы для горячей перезагрузки
+*.pid
+*.sock
+
+# ==================== Миграции (опционально) ====================
+# Раскомментируйте если используете миграции и хотите их исключить
+# migrations/
+# alembic/versions/*.py
+# !alembic/versions/__init__.py
+
+# ==================== Тестовые данные ====================
+test_data/
+fixtures/
+
+# ==================== IDE специфичное ====================
+# PyCharm
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/aws.xml
+
+# VS Code
+.history
